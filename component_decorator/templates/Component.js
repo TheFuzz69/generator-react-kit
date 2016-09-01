@@ -4,12 +4,12 @@ import styles from './<%= componentName %>.scss';
 
 @withStyles(styles)
 class <%= componentName %> extends Component {
+  static propTypes = {
+  };
+
   static contextTypes = {
     onSetTitle: PropTypes.func.isRequired,
     setHeaderPageTitle: PropTypes.func.isRequired
-  };
-
-  static propTypes = {
   };
 
   static defaultProps = {
