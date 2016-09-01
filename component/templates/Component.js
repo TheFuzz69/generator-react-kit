@@ -25,4 +25,5 @@ class <%= componentName %> extends Component {
     );
   }
 }
+
 export default withStyles(<%= componentName %>, s);

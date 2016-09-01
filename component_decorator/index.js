@@ -55,7 +55,7 @@ module.exports = generators.Base.extend({
 
       this.fs.copyTpl(
             this.templatePath('Component.js'),
-            this.destinationPath('src', 'components', fileName),
+            this.destinationPath('src', 'components', componentName, fileName),
             templateData
       );
     },
@@ -70,7 +70,7 @@ module.exports = generators.Base.extend({
 
       this.fs.copyTpl(
           this.templatePath('Component.scss'),
-          this.destinationPath('src', 'components', fileName),
+          this.destinationPath('src', 'components', componentName, fileName),
           templateData
       );
     },
@@ -85,7 +85,7 @@ module.exports = generators.Base.extend({
 
       this.fs.copyTpl(
         this.templatePath('package.json'),
-        this.destinationPath('src', 'components', fileName),
+        this.destinationPath('src', 'components', componentName, fileName),
         templateData
       );
     },
@@ -101,7 +101,7 @@ module.exports = generators.Base.extend({
 
       this.fs.copyTpl(
         this.templatePath('Component.test.js'),
-        this.destinationPath('src', 'components', fileName),
+        this.destinationPath('src', 'components', componentName, fileName),
         templateData
       );
     },

@@ -54,9 +54,9 @@ module.exports = generators.Base.extend({
       };
 
       this.fs.copyTpl(
-                                                this.templatePath('Component.js'),
-                                                this.destinationPath('src', 'components', fileName),
-                                                templateData
+        this.templatePath('Component.js'),
+        this.destinationPath('src', 'components', componentName, fileName),
+        templateData
       );
     },
 
@@ -69,9 +69,9 @@ module.exports = generators.Base.extend({
       };
 
       this.fs.copyTpl(
-                                                this.templatePath('Component.scss'),
-                                                this.destinationPath('src', 'components', fileName),
-                                                templateData
+        this.templatePath('Component.scss'),
+        this.destinationPath('src', 'components', componentName, fileName),
+        templateData
       );
     },
 
@@ -84,9 +84,9 @@ module.exports = generators.Base.extend({
       };
 
       this.fs.copyTpl(
-                                                this.templatePath('package.json'),
-                                                this.destinationPath('src', 'components', fileName),
-                                                templateData
+        this.templatePath('package.json'),
+        this.destinationPath('src', 'components', componentName, fileName),
+        templateData
       );
     },
 
@@ -100,9 +100,9 @@ module.exports = generators.Base.extend({
       };
 
       this.fs.copyTpl(
-                                                this.templatePath('Component.test.js'),
-                                                this.destinationPath('src', 'components', fileName),
-                                                templateData
+          this.templatePath('Component.test.js'),
+          this.destinationPath('src', 'components', componentName, fileName),
+          templateData
       );
     },
   },
@@ -114,13 +114,6 @@ module.exports = generators.Base.extend({
       this.log('#  Your component is ready!');
       this.log('# -------------------------- ');
       this.log('#');
-      this.log('# Use your component in the App:');
-      this.log('# import ' + this.componentName + ' from \'components/' + this.componentName + '\';');
-      if (this.componentGuide) {
-        this.log('#');
-        this.log('# Work on your component:');
-        this.log('# npm start ' + this.componentName);
-      }
       this.log('#');
       this.log('');
     },
