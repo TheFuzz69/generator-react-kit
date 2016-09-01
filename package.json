@@ -1,0 +1,29 @@
+{
+  "name": "generator-react-kit",
+  "version": "0.0.1",
+  "description": "React starter kit generator",
+  "files": [
+    "component"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheFuzz69/generator-react-kit"
+  },
+  "keywords": [
+    "yeoman-generator",
+    "react",
+  ],
+  "dependencies": {
+    "fs-extra": "^0.26.4",
+    "lodash": "^4.15.0",
+    "yeoman-generator": "^0.24.1"
+  },
+  "devDependencies": {
+
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheFuzz69/generator-react-kit/issues"
+  },
+  "homepage": "https://github.com/TheFuzz69/generator-react-kit"
+}
