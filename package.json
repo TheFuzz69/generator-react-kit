@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "React starter kit generator",
   "files": [
-    "component"
+    "component",
+    "component_decorator"
   ],
   "repository": {
     "type": "git",
@@ -11,7 +12,7 @@
   },
   "keywords": [
     "yeoman-generator",
-    "react",
+    "react"
   ],
   "dependencies": {
     "fs-extra": "^0.26.4",
